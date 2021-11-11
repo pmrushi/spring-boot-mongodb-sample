@@ -2,6 +2,7 @@ version: '2'
 
 services:
   mongodb:
+    container_name: mongodb
     image: mongo
     hostname: mongodbserver
     restart: always
@@ -12,6 +13,7 @@ services:
       - "27017:27017"
 
   mongo-express:
+    container_name: mongoExpress
     image: mongo-express
     restart: always
     ports:
